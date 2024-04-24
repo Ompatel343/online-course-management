@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="Style.css">
+  <script defer src="Script.js"></script>
+</head>
+
+<body>
+  <nav>
+    <p class="welcome">Log in to get started</p>
+    <form class="login">
+      <input type="text" placeholder="user" class="login__input login__input__user" required />
+      <input type="password" placeholder="password" class="login__input  login__input__password" required />
+      <button class="login__btn">&rarr;</button>
+    </form>
+  </nav>
+
+  <div class="admin hidden">
+    <!-- post -->
+    <div class="post css">
+      <p>post course details and schedule</p>
+      <form action="#">
+        <input type="text" placeholder="course name" class="course_name" required>
+        <input type="text" placeholder="schedule" class="schedule" required>
+        <button class="post_submit">submit</button>
+      </form>
+    </div>
+
+    <!-- modify -->
+    <div class="modify css">
+      <p>Modify details for any posted course</p>
+      <form action="#">
+        <input type="text" placeholder="old name" class="old_name" required>
+        <input type="text" placeholder="old schedule" class="old_schedule" required>
+        <br>
+        <input type="text" placeholder="new name" class="new_name" required>
+        <input type="text" placeholder="new schedule" class="new_schedule" required>
+        <button class="modify_submit">submit</button>
+      </form>
+    </div>
+
+    <!-- delete -->
+    <div class="delete css">
+      <p>Delete a posted course</p>
+      <form action="#">
+        <input type="text" placeholder="course name" class="course_name_delete" required>
+        <input type="text" placeholder="course schedule" class="course_schedule_delete" required>
+        <button class="delete_submit">submit</button>
+      </form>
+    </div>
+
+
+    <div class="listOfCoursesPosted css hidden">
+
+    </div>
+    <!-- registered users -->
+    <div class="registered css ">
+      <p>View List of registered users for any course</p>
+      <form action="#">
+        <input type="text" placeholder="course name" class="registration_view" required>
+        <button class="registered_submit">submit</button>
+      </form>
+    </div>
+    <div class="registered_display css hidden">
+
+    </div>
+  </div>
+
+
+  <div class="student hidden">
+    <div class="view css">
+    </div>
+    <!-- register -->
+    <div class="student_Register css">
+      <p>register for courses</p>
+      <form action="#">
+        <input type="text" placeholder="student name" class="student_name_register" required>
+        <input type="text" placeholder="course name" class="course_name_register" required>
+        <input type="text" placeholder="course schedule" class="course_schedule_register" required>
+        <button class="register_submit">submit</button>
+      </form>
+    </div>
+
+    <!-- delete registration -->
+
+    <div class="delete_registration css">
+      <p>delete registered courses</p>
+      <form action="#">
+        <input type="text" placeholder="student name" class="student_name_delete" required>
+        <input type="text" placeholder="course name" class="course_name_delete" required>
+        <input type="text" placeholder="course schedule" class="course_schedule_delete" required>
+        <button class="registration_delete_submit">submit</button>
+      </form>
+    </div>
+
+
+    <div class="pay css flex">
+      <form action="#">
+        <input type="text" placeholder="student name" class="student_name_pay" required>
+        <button class="pay_submit">pay fees</button>
+      </form>
+    </div>
+    <div class="pay_display css hidden">
+
+    </div>
+  </div>
+</body>
+
+</html>
