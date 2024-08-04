@@ -4,7 +4,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #f0f0f0;
-  background-image: url('https://source.unsplash.com/?university,campus/1920x1080');
+  background-image: url('https://source.unsplash.com/1920x1080/?university,campus');
 
   background-size: cover;
   background-repeat: no-repeat;
